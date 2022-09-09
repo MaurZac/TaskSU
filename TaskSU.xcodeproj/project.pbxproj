@@ -13,6 +13,7 @@
 		67F0B5D228CA8DBA00731076 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F0B5D128CA8DBA00731076 /* Preview Assets.xcassets */; };
 		67F0B5D428CA8DBA00731076 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0B5D328CA8DBA00731076 /* Persistence.swift */; };
 		67F0B5D728CA8DBA00731076 /* TaskSU.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67F0B5D528CA8DBA00731076 /* TaskSU.xcdatamodeld */; };
+		67F0B5DE28CBBA6C00731076 /* Sound in Resources */ = {isa = PBXBuildFile; fileRef = 67F0B5DD28CBBA6C00731076 /* Sound */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		67F0B5D128CA8DBA00731076 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67F0B5D328CA8DBA00731076 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		67F0B5D628CA8DBA00731076 /* TaskSU.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskSU.xcdatamodel; sourceTree = "<group>"; };
+		67F0B5DD28CBBA6C00731076 /* Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sound; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,14 @@
 		67F0B5C928CA8DB800731076 /* TaskSU */ = {
 			isa = PBXGroup;
 			children = (
+				67F0B5DF28CBBB7700731076 /* View */,
+				67F0B5E328CBBBA500731076 /* Model */,
+				67F0B5E228CBBB9A00731076 /* Style */,
+				67F0B5E128CBBB9100731076 /* Utility */,
+				67F0B5E028CBBB8900731076 /* Extension */,
+				67F0B5DD28CBBA6C00731076 /* Sound */,
 				67F0B5CA28CA8DB800731076 /* TaskSUApp.swift */,
-				67F0B5CC28CA8DB800731076 /* ContentView.swift */,
 				67F0B5CE28CA8DBA00731076 /* Assets.xcassets */,
-				67F0B5D328CA8DBA00731076 /* Persistence.swift */,
-				67F0B5D528CA8DBA00731076 /* TaskSU.xcdatamodeld */,
 				67F0B5D028CA8DBA00731076 /* Preview Content */,
 			);
 			path = TaskSU;
@@ -71,6 +76,44 @@
 				67F0B5D128CA8DBA00731076 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67F0B5DF28CBBB7700731076 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67F0B5CC28CA8DB800731076 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67F0B5E028CBBB8900731076 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		67F0B5E128CBBB9100731076 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		67F0B5E228CBBB9A00731076 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		67F0B5E328CBBBA500731076 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67F0B5D328CA8DBA00731076 /* Persistence.swift */,
+				67F0B5D528CA8DBA00731076 /* TaskSU.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F0B5DE28CBBA6C00731076 /* Sound in Resources */,
 				67F0B5D228CA8DBA00731076 /* Preview Assets.xcassets in Resources */,
 				67F0B5CF28CA8DBA00731076 /* Assets.xcassets in Resources */,
 			);
