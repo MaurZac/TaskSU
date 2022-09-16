@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F5EB02428D43DB800361150 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EB02228D43DB800361150 /* Item+CoreDataClass.swift */; };
+		3F5EB02528D43DB800361150 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EB02328D43DB800361150 /* Item+CoreDataProperties.swift */; };
+		3F5EB02728D444C300361150 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EB02628D444C300361150 /* Constant.swift */; };
 		67F0B5CB28CA8DB800731076 /* TaskSUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0B5CA28CA8DB800731076 /* TaskSUApp.swift */; };
 		67F0B5CD28CA8DB800731076 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0B5CC28CA8DB800731076 /* ContentView.swift */; };
 		67F0B5CF28CA8DBA00731076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F0B5CE28CA8DBA00731076 /* Assets.xcassets */; };
@@ -17,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F5EB02128D436F500361150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3F5EB02228D43DB800361150 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F5EB02328D43DB800361150 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F5EB02628D444C300361150 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = SOURCE_ROOT; };
 		67F0B5C728CA8DB800731076 /* TaskSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F0B5CA28CA8DB800731076 /* TaskSUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSUApp.swift; sourceTree = "<group>"; };
 		67F0B5CC28CA8DB800731076 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +48,9 @@
 		67F0B5BE28CA8DB800731076 = {
 			isa = PBXGroup;
 			children = (
+				67F0B5CA28CA8DB800731076 /* TaskSUApp.swift */,
+				3F5EB02228D43DB800361150 /* Item+CoreDataClass.swift */,
+				3F5EB02328D43DB800361150 /* Item+CoreDataProperties.swift */,
 				67F0B5C928CA8DB800731076 /* TaskSU */,
 				67F0B5C828CA8DB800731076 /* Products */,
 			);
@@ -57,13 +67,13 @@
 		67F0B5C928CA8DB800731076 /* TaskSU */ = {
 			isa = PBXGroup;
 			children = (
+				3F5EB02128D436F500361150 /* Info.plist */,
 				67F0B5DF28CBBB7700731076 /* View */,
 				67F0B5E328CBBBA500731076 /* Model */,
 				67F0B5E228CBBB9A00731076 /* Style */,
 				67F0B5E128CBBB9100731076 /* Utility */,
 				67F0B5E028CBBB8900731076 /* Extension */,
 				67F0B5DD28CBBA6C00731076 /* Sound */,
-				67F0B5CA28CA8DB800731076 /* TaskSUApp.swift */,
 				67F0B5CE28CA8DBA00731076 /* Assets.xcassets */,
 				67F0B5D028CA8DBA00731076 /* Preview Content */,
 			);
@@ -96,6 +106,7 @@
 		67F0B5E128CBBB9100731076 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				3F5EB02628D444C300361150 /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -187,6 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5EB02728D444C300361150 /* Constant.swift in Sources */,
+				3F5EB02528D43DB800361150 /* Item+CoreDataProperties.swift in Sources */,
+				3F5EB02428D43DB800361150 /* Item+CoreDataClass.swift in Sources */,
 				67F0B5D428CA8DBA00731076 /* Persistence.swift in Sources */,
 				67F0B5CD28CA8DB800731076 /* ContentView.swift in Sources */,
 				67F0B5D728CA8DBA00731076 /* TaskSU.xcdatamodeld in Sources */,
@@ -316,24 +330,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskSU/Preview Content\"";
-				DEVELOPMENT_TEAM = TX65264J97;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskSU/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.TaskSU;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.testsu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,24 +361,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskSU/Preview Content\"";
-				DEVELOPMENT_TEAM = TX65264J97;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskSU/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.TaskSU;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.testsu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
